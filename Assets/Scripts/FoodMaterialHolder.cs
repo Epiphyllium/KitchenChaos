@@ -8,7 +8,6 @@ namespace DefaultNamespace
     {
         [SerializeField] private FoodMaterialHolder _targetHolder;
         [FormerlySerializedAs("_HoldPoint")] [FormerlySerializedAs("_foodTrans")] [SerializeField] private Transform _holdPoint;
-        [FormerlySerializedAs("_food")] [SerializeField] private FoodMaterialSO _foodSO;
         private FoodMaterial _holdingFood;
         
         public FoodMaterial GetHoldingFood()
@@ -25,11 +24,7 @@ namespace DefaultNamespace
         {
             return _holdPoint;
         }
-
-        public FoodMaterialSO GetFoodSO()
-        {
-            return _foodSO;
-        }
+        
         public FoodMaterialHolder GetTargetHolder()
         {
             return _targetHolder;
@@ -41,11 +36,15 @@ namespace DefaultNamespace
             this._holdingFood = foodMaterial;
         }
 
+        public bool IsHoldingFood()
+        {
+            return _holdingFood != null;
+        }
         public void ClearFoodOnHolder()
         {
             this._holdingFood = null;
         }
-
+        
         public void FoodMaterialTransfer(FoodMaterialHolder sourceHolder, FoodMaterialHolder targetHolder)
         {
             var transFood = sourceHolder.GetHoldingFood();

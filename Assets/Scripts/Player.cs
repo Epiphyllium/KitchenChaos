@@ -7,17 +7,25 @@ using UnityEngine;
 public class Player : FoodMaterialHolder
 {
     private Rigidbody _rigidbody;
+
+    //public static Player _player { get; private set; }
     
     [SerializeField] private LayerMask _counterLayerMask ;
-    [SerializeField]private GameInput _gameInput;
+    [SerializeField] private GameInput _gameInput;
     
     private float _moveSpeed = 7.0f;
     private float _rotateSpeed = 10.0f;
     private float _interactWithClearCounterDis = 2.0f;
     
     private bool _isWalking;
-    private ClearCounter _curSelectedCounter;
+    private BaseCounter _curSelectedCounter;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        //_player = this;
+    }
+
     void Start()
     {
         // _rigidbody = GetComponent<Rigidbody>();
@@ -57,15 +65,15 @@ public class Player : FoodMaterialHolder
 
     private void GameInput_OnInteractAction(object sender, System.EventArgs e)
     {
-        _curSelectedCounter?.Interact();
+        _curSelectedCounter?.Interact(this);
     }
 
     private bool IsCollideWithCounter(out RaycastHit hitInfo)
     {
         return Physics.Raycast(transform.position, transform.forward, out hitInfo,_interactWithClearCounterDis,_counterLayerMask);
     }
-
-    public void SetCurSelectedCounter(ClearCounter counter)
+    
+    public void SetCurSelectedCounter(BaseCounter counter)
     {
         if (counter != _curSelectedCounter)
         {
@@ -78,7 +86,7 @@ public class Player : FoodMaterialHolder
     {
         if (IsCollideWithCounter(out RaycastHit hitInfo))
         {
-            if (hitInfo.transform.TryGetComponent<ClearCounter>(out ClearCounter curInterCounter))
+            if (hitInfo.transform.TryGetComponent<BaseCounter>(out BaseCounter curInterCounter))
             {
                 SetCurSelectedCounter(curInterCounter);
             }

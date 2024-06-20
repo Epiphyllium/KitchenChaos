@@ -42,14 +42,17 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
+     <Compile Include="Assets\Scripts\Counter\BaseCounter.cs" />
+     <Compile Include="Assets\Scripts\Counter\ContainerCounter.cs" />
      <Compile Include="Assets\GameControl.cs" />
      <Compile Include="Assets\Scripts\FoodMaterialHolder.cs" />
      <Compile Include="Assets\Scripts\FoodMaterial.cs" />
      <Compile Include="Assets\Scripts\FoodMaterialSO.cs" />
      <Compile Include="Assets\Scripts\GameInput.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scripts\ClearCounter.cs" />
+     <Compile Include="Assets\Scripts\Counter\ClearCounter.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Counter\CountainerCounterVisual.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Assets\Meshes\Textures" />
      <None Include="Assets\README.txt" />
@@ -76,6 +79,7 @@
      <Folder Include="Assets\ExampleAssets\Textures\Concrete" />
      <Folder Include="Assets\_Assets\Meshes" />
      <Folder Include="Assets\ScriptObjects" />
+     <Folder Include="Assets\Scripts\Counter" />
      <Folder Include="Assets\Animations" />
      <Folder Include="Assets\ExampleAssets\Textures\Metal" />
      <Folder Include="Assets\_Assets\PrefabsVisuals\KitchenObjectsVisuals" />
