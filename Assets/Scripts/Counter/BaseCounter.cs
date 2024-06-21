@@ -25,7 +25,14 @@ namespace DefaultNamespace
         {
             Debug.LogWarning("There is no override Interact function");
         }
-        
+        public void CreateFoodMaterialOnHolder(GameObject foodMaterialPrefab)
+        {
+            FoodMaterial food = GameObject.Instantiate(foodMaterialPrefab, GetHoldPoint()).GetComponent<FoodMaterial>();
+            SetHoldingFood(food);
+        }
+        public virtual void Operate(Player player)
+        {
+        }
     }
     
 }

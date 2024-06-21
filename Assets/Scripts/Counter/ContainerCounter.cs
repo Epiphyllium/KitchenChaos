@@ -13,11 +13,6 @@ public class ContainerCounter : BaseCounter
         return _foodSO;
     }
     
-    public void CreateFoodMaterialOnHolder(GameObject foodMaterialPrefab)
-    {
-        FoodMaterial food = GameObject.Instantiate(foodMaterialPrefab, GetHoldPoint()).GetComponent<FoodMaterial>();
-        SetHoldingFood(food);
-    }
     public override void Interact(Player player)
     {
         if (player.IsHoldingFood()) return;

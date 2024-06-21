@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -44,7 +45,13 @@ namespace DefaultNamespace
         {
             this._holdingFood = null;
         }
-        
+
+        public void DestroyFoodMaterialOnHolder()
+        {
+            Destroy(_holdingFood.gameObject);
+            ClearFoodOnHolder();
+        }
+
         public void FoodMaterialTransfer(FoodMaterialHolder sourceHolder, FoodMaterialHolder targetHolder)
         {
             var transFood = sourceHolder.GetHoldingFood();

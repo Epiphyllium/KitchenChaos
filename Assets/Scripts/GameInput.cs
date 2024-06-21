@@ -8,7 +8,8 @@ public class GameInput : MonoBehaviour
     private GameControl _gameControl;
     
     //OnInterAction:触发事件的接口
-    public event EventHandler OnInterAction; 
+    public event EventHandler OnInterAction;
+    public event EventHandler OnOperateAction;
     private void Awake()
     {
         _gameControl = new GameControl();
@@ -16,6 +17,7 @@ public class GameInput : MonoBehaviour
         //将 Interact_Performed 方法添加为performed事件的一个监听器。
         //换句话说，当玩家执行了 "Interact" 动作时，就会调用 Interact_Performed 方法。
         _gameControl.Player.Interact.performed += Interact_Performed;
+        _gameControl.Player.Operate.performed += Operate_Performed;
     }
 
     // Start is called before the first frame update
@@ -38,6 +40,11 @@ public class GameInput : MonoBehaviour
     private void Interact_Performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         OnInterAction?.Invoke(this,EventArgs.Empty);
+    }
+
+    private void Operate_Performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnOperateAction?.Invoke(this,EventArgs.Empty);
     }
     public Vector3 GetNormalizedMovementDir()
     {

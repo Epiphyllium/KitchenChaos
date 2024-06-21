@@ -30,8 +30,9 @@ public class Player : FoodMaterialHolder
     {
         // _rigidbody = GetComponent<Rigidbody>();
         // _rigidbody.position = transform.position;
-
         _gameInput.OnInterAction += GameInput_OnInteractAction;
+        _gameInput.OnOperateAction += GameInput_OnOperateAction;
+
     }
 
     // Update is called once per frame
@@ -66,6 +67,11 @@ public class Player : FoodMaterialHolder
     private void GameInput_OnInteractAction(object sender, System.EventArgs e)
     {
         _curSelectedCounter?.Interact(this);
+    }
+
+    private void GameInput_OnOperateAction(object sender, System.EventArgs e)
+    {
+        _curSelectedCounter?.Operate(this);
     }
 
     private bool IsCollideWithCounter(out RaycastHit hitInfo)

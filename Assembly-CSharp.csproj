@@ -44,16 +44,18 @@
      <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
      <Compile Include="Assets\Scripts\Counter\BaseCounter.cs" />
      <Compile Include="Assets\Scripts\Counter\ContainerCounter.cs" />
+     <Compile Include="Assets\Scripts\UI\ProgressBarUI.cs" />
      <Compile Include="Assets\GameControl.cs" />
      <Compile Include="Assets\Scripts\FoodMaterialHolder.cs" />
+     <Compile Include="Assets\Scripts\Counter\CuttingCounter.cs" />
      <Compile Include="Assets\Scripts\FoodMaterial\FoodMaterial.cs" />
-     <Compile Include="Assets\Scripts\FoodMaterial\FoodMaterialSO.cs" />
+     <Compile Include="Assets\Scripts\ScriptObjects\FoodMaterialSO.cs" />
      <Compile Include="Assets\Scripts\GameInput.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\Counter\ClearCounter.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\ScriptObjects\CuttingRecipeSOList.cs" />
      <Compile Include="Assets\Scripts\Counter\CountainerCounterVisual.cs" />
-     <Compile Include="Assets\Scripts\Counter\CuttingCounter.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Assets\Meshes\Textures" />
      <None Include="Assets\README.txt" />
@@ -78,6 +80,7 @@
      <Folder Include="Assets\ExampleAssets\Textures\Props\Paint" />
      <Folder Include="Assets\_Assets\Font" />
      <Folder Include="Assets\Settings" />
+     <Folder Include="Assets\Scripts\UI" />
      <Folder Include="Assets\ExampleAssets\Textures\Concrete" />
      <Folder Include="Assets\_Assets\Meshes" />
      <Folder Include="Assets\ScriptObjects" />
@@ -91,6 +94,7 @@
      <Folder Include="Assets\TutorialInfo\Icons" />
      <Folder Include="Assets\ExampleAssets\Models" />
      <Folder Include="Assets\ExampleAssets\Textures\Props\Construction_Light" />
+     <Folder Include="Assets\Scripts\ScriptObjects" />
      <Folder Include="Assets\ExampleAssets\Textures\Props" />
      <Folder Include="Assets\ExampleAssets\Shaders" />
      <Folder Include="Assets\ExampleAssets\Textures" />
@@ -101,6 +105,7 @@
      <Folder Include="Assets\_Assets\PrefabsVisuals" />
      <Folder Include="Assets\_Assets\Sounds\SFX" />
      <Folder Include="Assets\ExampleAssets\Prefabs" />
+     <Folder Include="Assets\ScriptObjects\FoodMaterialSO" />
      <Folder Include="Assets\ExampleAssets\Textures\Wood" />
      <Folder Include="Assets\_Assets\Textures\Icons" />
      <Folder Include="Assets\ExampleAssets\Materials" />
