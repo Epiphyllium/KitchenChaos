@@ -7,17 +7,6 @@ public class ContainerCounter : BaseCounter
 {
     [SerializeField] private FoodMaterialSO _foodSO;
     [SerializeField] private CountainerCounterVisual _countainerCounterVisual;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //_countainerCounterVisual = GetComponentInChildren<GameObject>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     public FoodMaterialSO GetFoodSO()
     {

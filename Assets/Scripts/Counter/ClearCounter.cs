@@ -22,16 +22,17 @@ public class ClearCounter : BaseCounter
     
     public override void Interact(Player player)
     {
-        // FoodMaterial food = GetHoldingFood();
-        // if (food == null)
-        // {
-        //     food = GameObject.Instantiate(GetFoodSO().foodPrefab, GetHoldPoint()).GetComponent<FoodMaterial>();
-        //     SetHoldingFood(food);
-        // }
-        // else
-        // {
-        //     FoodMaterialTransfer(this,player);
-        // }
+        if (player.IsHoldingFood()&&!IsHoldingFood())
+        {
+            FoodMaterialTransfer(player,this);
+            return;
+        }
+
+        if (!player.IsHoldingFood() && this.IsHoldingFood())
+        {
+            FoodMaterialTransfer(this,player);
+            return;
+        }
     }
     
     

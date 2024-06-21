@@ -46,13 +46,14 @@
      <Compile Include="Assets\Scripts\Counter\ContainerCounter.cs" />
      <Compile Include="Assets\GameControl.cs" />
      <Compile Include="Assets\Scripts\FoodMaterialHolder.cs" />
-     <Compile Include="Assets\Scripts\FoodMaterial.cs" />
-     <Compile Include="Assets\Scripts\FoodMaterialSO.cs" />
+     <Compile Include="Assets\Scripts\FoodMaterial\FoodMaterial.cs" />
+     <Compile Include="Assets\Scripts\FoodMaterial\FoodMaterialSO.cs" />
      <Compile Include="Assets\Scripts\GameInput.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\Counter\ClearCounter.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Counter\CountainerCounterVisual.cs" />
+     <Compile Include="Assets\Scripts\Counter\CuttingCounter.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Assets\Meshes\Textures" />
      <None Include="Assets\README.txt" />
@@ -72,6 +73,7 @@
      <Folder Include="Assets\Presets" />
      <Folder Include="Assets\ExampleAssets\Textures\Props\Hammer" />
      <Folder Include="Assets\_Assets\Sounds\Music" />
+     <Folder Include="Assets\Scripts\FoodMaterial" />
      <None Include="Assets\_Assets\Font\character.txt" />
      <Folder Include="Assets\ExampleAssets\Textures\Props\Paint" />
      <Folder Include="Assets\_Assets\Font" />

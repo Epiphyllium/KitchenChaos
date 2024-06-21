@@ -12,12 +12,6 @@ public class CountainerCounterVisual : MonoBehaviour
         _openCloseAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlayOpen()
     {
         _openCloseAnimator.SetTrigger(OPEN_CLOSE);
