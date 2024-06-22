@@ -7,9 +7,9 @@ namespace DefaultNamespace
     
     public class FoodMaterialHolder: MonoBehaviour
     {
-        [SerializeField] private FoodMaterialHolder _targetHolder;
-        [FormerlySerializedAs("_HoldPoint")] [FormerlySerializedAs("_foodTrans")] [SerializeField] private Transform _holdPoint;
+        private FoodMaterialHolder _targetHolder;
         private FoodMaterial _holdingFood;
+        [FormerlySerializedAs("_HoldPoint")] [FormerlySerializedAs("_foodTrans")] [SerializeField] private Transform _holdPoint;
         
         public FoodMaterial GetHoldingFood()
         {

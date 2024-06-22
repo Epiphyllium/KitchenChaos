@@ -59,6 +59,8 @@
      <Compile Include="Assets\Scripts\LookAt.cs" />
      <Compile Include="Assets\Scripts\Counter\TrashCounter.cs" />
      <Compile Include="Assets\Scripts\Counter\CuttingCounterVisual.cs" />
+     <Compile Include="Assets\Scripts\Counter\StoveCounter.cs" />
+     <Compile Include="Assets\Scripts\ScriptObjects\GrillingRecipeSOList.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Assets\Meshes\Textures" />
      <None Include="Assets\README.txt" />
