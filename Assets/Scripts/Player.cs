@@ -75,7 +75,7 @@ public class Player : FoodMaterialHolder
     }
 
     private bool IsCollideWithCounter(out RaycastHit hitInfo)
-    {
+    { 
         return Physics.Raycast(transform.position, transform.forward, out hitInfo,_interactWithClearCounterDis,_counterLayerMask);
     }
     

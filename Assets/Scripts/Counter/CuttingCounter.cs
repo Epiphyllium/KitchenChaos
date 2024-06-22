@@ -10,6 +10,7 @@ public class CuttingCounter : BaseCounter
     private int curCuttingCount = 0;
     [SerializeField] private ProgressBarUI _cuttingProgress;
     [FormerlySerializedAs("_cuttingRecipeSoList")] [SerializeField] private CuttingRecipeSOList _cuttingRecipeSOList;
+    [SerializeField] private CuttingCounterVisual _cuttingCounterVisual;
     public override void Interact(Player player)
     {
         if (player.IsHoldingFood()&&!IsHoldingFood())
@@ -35,8 +36,7 @@ public class CuttingCounter : BaseCounter
             if (_cuttingRecipeSOList.TryGetCuttingRecipeSO(inputFoodSO, out CuttingRecipeSO cuttingRecipeSO))
             {
                 int cuttingCount = cuttingRecipeSO.cuttingCount;
-                curCuttingCount++;
-                _cuttingProgress.UpdateProgress((float)curCuttingCount/cuttingCount);
+                Cut(cuttingCount);
                 if (curCuttingCount >= cuttingCount)
                 {
                     DestroyFoodMaterialOnHolder();
@@ -44,5 +44,12 @@ public class CuttingCounter : BaseCounter
                 }
             }
         }
+    }
+
+    private void Cut(int cuttingCount)
+    {
+        curCuttingCount++;
+        _cuttingCounterVisual.playCut();
+        _cuttingProgress.UpdateProgress((float)curCuttingCount/cuttingCount);
     }
 }
