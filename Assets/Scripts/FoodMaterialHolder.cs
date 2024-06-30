@@ -48,6 +48,10 @@ namespace DefaultNamespace
 
         public void DestroyFoodMaterialOnHolder()
         {
+            if (_holdingFood == null)
+            {
+                Debug.LogError("There is no object can be destroyed");
+            }
             Destroy(_holdingFood.gameObject);
             ClearFoodOnHolder();
         }

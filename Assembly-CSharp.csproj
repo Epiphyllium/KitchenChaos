@@ -42,25 +42,27 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
+     <Compile Include="Assets\Scripts\Counter\PlatesCounter.cs" />
      <Compile Include="Assets\Scripts\Counter\BaseCounter.cs" />
+     <Compile Include="Assets\Scripts\Counter\CuttingCounterVisual.cs" />
      <Compile Include="Assets\Scripts\Counter\ContainerCounter.cs" />
      <Compile Include="Assets\Scripts\UI\ProgressBarUI.cs" />
+     <Compile Include="Assets\Scripts\Counter\TrashCounter.cs" />
      <Compile Include="Assets\GameControl.cs" />
+     <Compile Include="Assets\Scripts\LookAt.cs" />
      <Compile Include="Assets\Scripts\FoodMaterialHolder.cs" />
      <Compile Include="Assets\Scripts\Counter\CuttingCounter.cs" />
      <Compile Include="Assets\Scripts\FoodMaterial\FoodMaterial.cs" />
      <Compile Include="Assets\Scripts\ScriptObjects\FoodMaterialSO.cs" />
      <Compile Include="Assets\Scripts\GameInput.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Scripts\Counter\StoveCounter.cs" />
+     <Compile Include="Assets\Scripts\Counter\StoveCounterVisual.cs" />
      <Compile Include="Assets\Scripts\Counter\ClearCounter.cs" />
+     <Compile Include="Assets\Scripts\ScriptObjects\GrillingRecipeSOList.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\ScriptObjects\CuttingRecipeSOList.cs" />
      <Compile Include="Assets\Scripts\Counter\CountainerCounterVisual.cs" />
-     <Compile Include="Assets\Scripts\LookAt.cs" />
-     <Compile Include="Assets\Scripts\Counter\TrashCounter.cs" />
-     <Compile Include="Assets\Scripts\Counter\CuttingCounterVisual.cs" />
-     <Compile Include="Assets\Scripts\Counter\StoveCounter.cs" />
-     <Compile Include="Assets\Scripts\ScriptObjects\GrillingRecipeSOList.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Assets\Meshes\Textures" />
      <None Include="Assets\README.txt" />
@@ -106,6 +108,7 @@
      <Folder Include="Assets\Prefabs\FoodMaterial" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\ExampleAssets\Textures\Props\HardHat" />
+     <Folder Include="Assets\ScriptObjects\RecipeSO" />
      <Folder Include="Assets\Prefabs\Counters" />
      <Folder Include="Assets\_Assets\PrefabsVisuals" />
      <Folder Include="Assets\_Assets\Sounds\SFX" />

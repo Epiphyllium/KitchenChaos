@@ -12,4 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c522a919ecb4ba8a7580cad58390bb8, type: 3}
   m_Name: Grilling Recipe SO List
   m_EditorClassIdentifier: 
-  grillingRecipeList: []
+  grillingRecipeList:
+  - inputFood: {fileID: 11400000, guid: 19f80ba558e0b2f4cae36340f3493625, type: 2}
+    outputFood: {fileID: 11400000, guid: b40eab898d057644f8c14a34a60baad3, type: 2}
+    cookingTime: 3
+  - inputFood: {fileID: 11400000, guid: b40eab898d057644f8c14a34a60baad3, type: 2}
+    outputFood: {fileID: 11400000, guid: e6683e6ad6e637f4cac2bc2f06d488b9, type: 2}
+    cookingTime: 5
+  - inputFood: {fileID: 11400000, guid: e6683e6ad6e637f4cac2bc2f06d488b9, type: 2}
+    outputFood: {fileID: 11400000, guid: e6683e6ad6e637f4cac2bc2f06d488b9, type: 2}
+    cookingTime: 0

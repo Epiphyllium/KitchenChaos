@@ -226,6 +226,7 @@ m_PackageAssets:
         - 3.0.26
         - 3.0.27
         - 3.0.28
+        - 3.0.31
         compatible:
         - 1.0.2
         - 1.0.6
@@ -269,7 +270,8 @@ m_PackageAssets:
         - 3.0.26
         - 3.0.27
         - 3.0.28
-        verified: 3.0.28
+        - 3.0.31
+        verified: 3.0.31
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6

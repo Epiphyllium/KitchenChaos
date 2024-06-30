@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Plate
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 3145608789649670307, guid: 59ad1e12fd8df274eb2ec7d5367389a9, type: 3}
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 3928afb5321bb3d489bbd4ac581b29a2, type: 3}
   name: Plate

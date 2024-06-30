@@ -14,6 +14,9 @@ public class StoveCounter : BaseCounter
         Fire
     }
     [SerializeField] private GrillingRecipeSOList _grillingRecipeSOList;
+    [SerializeField] private StoveCounterVisual _stoveCounterVisual;
+    [SerializeField] private ProgressBarUI _progressBar;
+    
     private float _grillingTimer;
     private GrillingRecipeSO _curGrillingRecipeSO;
     private StoveStatus _state = StoveStatus.Idle;
@@ -45,9 +48,12 @@ public class StoveCounter : BaseCounter
         {
             case StoveStatus.Idle:
                 _curGrillingRecipeSO = null;
+                _stoveCounterVisual.HideStoveEffect();
+                _progressBar.Hide();
                 break;
             case StoveStatus.Grilling:
                 _grillingTimer += Time.deltaTime;
+                _progressBar.UpdateProgress(_grillingTimer/_curGrillingRecipeSO.cookingTime);
                 if (_grillingTimer >= _curGrillingRecipeSO.cookingTime)
                 {
                     DestroyFoodMaterialOnHolder();
@@ -59,6 +65,7 @@ public class StoveCounter : BaseCounter
                 break;
             case StoveStatus.Burning:
                 _grillingTimer += Time.deltaTime;
+                _progressBar.UpdateProgress(_grillingTimer/_curGrillingRecipeSO.cookingTime);
                 if (_grillingTimer >= _curGrillingRecipeSO.cookingTime)
                 {
                     DestroyFoodMaterialOnHolder();
@@ -77,10 +84,12 @@ public class StoveCounter : BaseCounter
     {
         _grillingTimer = 0.0f;
         _state = StoveStatus.Grilling;
+        _stoveCounterVisual.ShowStoveEffect();
     }
     private void Burning()
     {
         _grillingTimer = 0.0f;
         _state = StoveStatus.Burning;
+        _stoveCounterVisual.ShowStoveEffect();
     }
 }
