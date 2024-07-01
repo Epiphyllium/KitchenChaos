@@ -15,7 +15,11 @@ namespace DefaultNamespace
         {
             return _holdingFood;
         }
-
+        
+        public FoodMaterialSO GetHoldingFoodSO()
+        {
+            return _holdingFood.GetFoodMaterialSO();
+        }
         public void SetHoldingFood(FoodMaterial food)
         {
             food.transform.localPosition = Vector3.zero;
@@ -61,7 +65,7 @@ namespace DefaultNamespace
             var transFood = sourceHolder.GetHoldingFood();
             if (transFood == null)
             {
-                Debug.LogWarning("There is no food on sourceCounter:"+this.gameObject);
+                Debug.LogWarning("There is no food on sourceHolder:"+this.gameObject);
                 return;
             }
             if (targetHolder.GetHoldingFood() != null)

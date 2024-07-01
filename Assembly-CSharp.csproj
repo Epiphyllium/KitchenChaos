@@ -56,11 +56,13 @@
      <Compile Include="Assets\Scripts\ScriptObjects\FoodMaterialSO.cs" />
      <Compile Include="Assets\Scripts\GameInput.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Scripts\FoodMaterial\Plate.cs" />
      <Compile Include="Assets\Scripts\Counter\StoveCounter.cs" />
      <Compile Include="Assets\Scripts\Counter\StoveCounterVisual.cs" />
      <Compile Include="Assets\Scripts\Counter\ClearCounter.cs" />
      <Compile Include="Assets\Scripts\ScriptObjects\GrillingRecipeSOList.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\FoodMaterial\PlateCompleteVisual.cs" />
      <Compile Include="Assets\Scripts\ScriptObjects\CuttingRecipeSOList.cs" />
      <Compile Include="Assets\Scripts\Counter\CountainerCounterVisual.cs" />
      <Folder Include="Assets" />
