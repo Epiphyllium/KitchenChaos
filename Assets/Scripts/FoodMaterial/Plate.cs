@@ -8,6 +8,7 @@ namespace DefaultNamespace
     {
         [SerializeField]private List<FoodMaterialSO> _validFoodSOList;
         [SerializeField]private PlateCompleteVisual _visual;
+        [SerializeField]private FoodMaterialGridUI _ui;
         private List<FoodMaterialSO> _foodSOList = new List<FoodMaterialSO>();
         
         public bool TryAddFoodMaterial(FoodMaterialSO foodSO)
@@ -18,6 +19,7 @@ namespace DefaultNamespace
             }
             _foodSOList.Add(foodSO);
             _visual.ShowFoodMaterial(foodSO);
+            _ui.ShowFoodMaterialGridUI(foodSO);
             return true;
         }
     }

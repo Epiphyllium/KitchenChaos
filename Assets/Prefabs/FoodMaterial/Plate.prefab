@@ -129,6 +129,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c746eaf99019791439f77cef513ef389, type: 2}
   - {fileID: 11400000, guid: df0bbd8387379574f9728db51d88c826, type: 2}
   _visual: {fileID: 3036975124774141931}
+  _ui: {fileID: 6538383671258743572}
 --- !u!1 &3818707839786964204
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +141,7 @@ GameObject:
   - component: {fileID: 2563895462623140063}
   - component: {fileID: 1219119428886413164}
   - component: {fileID: 6077205768136498567}
+  - component: {fileID: 3011408080560015808}
   m_Layer: 0
   m_Name: IconTemplate
   m_TagString: Untagged
@@ -162,10 +164,10 @@ RectTransform:
   m_Father: {fileID: 4695834643355899549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 71.1, y: -12.5}
-  m_SizeDelta: {x: 25, y: 25}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1219119428886413164
 CanvasRenderer:
@@ -205,6 +207,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3011408080560015808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3818707839786964204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f95b3f3cdaa7045bd83a7038d833b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _iconImage: {fileID: 3320134745608939685}
 --- !u!1 &7466137223875819917
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,18 +249,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7466137223875819917}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.20290136, y: -0, z: -0, w: 0.9791992}
+  m_LocalPosition: {x: 0, y: 0, z: -3.6}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 2563895462623140063}
   m_Father: {fileID: 2175711215927169865}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -23.413, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.775}
-  m_SizeDelta: {x: 142.2, y: 25}
+  m_AnchoredPosition: {x: 0, y: 0.74}
+  m_SizeDelta: {x: 125, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1026977330956739108
 Canvas:
@@ -328,8 +343,8 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 25, y: 25}
-  m_Spacing: {x: 1.4, y: 0}
+  m_CellSize: {x: 30, y: 30}
+  m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &8077133827392441338
@@ -357,6 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e42df318e78fbb4e80f825bf64ce7c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _iconTemplateUI: {fileID: 3011408080560015808}
 --- !u!1001 &4192382148888887925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -434,7 +450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3550707552663613203, guid: 10e39c981f2de6441b54efde32ced8f0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3611271270719445377, guid: 10e39c981f2de6441b54efde32ced8f0, type: 3}
       propertyPath: m_IsActive

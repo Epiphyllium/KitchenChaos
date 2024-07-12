@@ -64,7 +64,10 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\FoodMaterial\PlateCompleteVisual.cs" />
      <Compile Include="Assets\Scripts\ScriptObjects\CuttingRecipeSOList.cs" />
+     <Compile Include="Assets\Scripts\UI\FoodMaterialGridUI.cs" />
      <Compile Include="Assets\Scripts\Counter\CountainerCounterVisual.cs" />
+     <Compile Include="Assets\Scripts\UI\FoodMaterialIconUI.cs" />
+     <Compile Include="Assets\FoodMaterialiCON.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Assets\Meshes\Textures" />
      <None Include="Assets\README.txt" />
